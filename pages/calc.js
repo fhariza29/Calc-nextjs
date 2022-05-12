@@ -61,11 +61,15 @@ function Calc() {
         setDisplayNumber(0)
     }
 
-    // const handleDelete = () => {
-    //     setDisplayNumber = DisplayNumber.substr(0, DisplayNumber.length - 1)
+    const handleDelete = () => {
+        //belum bisa berfungsi
+        setAngkaPertama(null)
+        setAngkaKedua(null)
+        setOperator(null)
+        setDisplayNumber(0)
 
 
-    // }
+    }
 
     const handleResult = () => {
         let tempResult
