@@ -61,11 +61,11 @@ function Calc() {
         setDisplayNumber(0)
     }
 
-    const handleDelete = () => {
-        setDisplayNumber = DisplayNumber.substr(0, DisplayNumber.length - 1)
+    // const handleDelete = () => {
+    //     setDisplayNumber = DisplayNumber.substr(0, DisplayNumber.length - 1)
 
 
-    }
+    // }
 
     const handleResult = () => {
         let tempResult
