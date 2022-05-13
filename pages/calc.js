@@ -115,8 +115,8 @@ function Calc() {
                 </div>
                 <div className='flex flex-row flex-wrap h-[340px] gap-2'>
 
-                    <Button clickAction={handleClear} val={'C'} grow={true} />
-                    <Button clickAction={handleDelete} val={'D'} />
+                    <Button clickAction={handleClear} val={'AC'} grow={true} />
+                    <Button clickAction={handleDelete} val={'DEL'} />
                     <Button clickAction={handleOperator} val={'/'} operator={true} />
 
 
