@@ -4,8 +4,8 @@ import Calc from './calc'
 
 const index = () => {
   return (
-    <div className=' bg-slate-800  aspect-auto h-screen py-16  '>
-    <div className='     px-4 flex justify-around text-center my-20 box-border ml-96 mr-96'>
+    <div className=' bg-slate-800 w-full aspect-auto auto-cols-max py-16'>
+    <div className='    py-20 px-5 flex justify-around text-center my-20 box-border ml-96 mr-96'>
     <Calc />
     </div>
     </div>
