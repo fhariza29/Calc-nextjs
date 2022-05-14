@@ -62,12 +62,26 @@ function Calc() {
     }
 
     const handleDelete = () => {
-        //belum bisa berfungsi
+        
         let str = DisplayNumber
         str = str.slice(0,str.length -1)
         setDisplayNumber(str)
         setResult(str)
-        setAngkaPertama(str)
+        if(AngkaPertama && AngkaKedua == null) {
+            str = AngkaPertama;
+        } else {
+            str = AngkaKedua;
+        }
+        str = str.slice(0,str.length -1)
+
+        if(AngkaPertama && AngkaKedua == null) {
+            setAngkaPertama(str)
+        } else {
+            setAngkaKedua(str)
+        }
+        
+    
+            
 
 
 
