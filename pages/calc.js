@@ -63,10 +63,12 @@ function Calc() {
 
     const handleDelete = () => {
         //belum bisa berfungsi
-        setAngkaPertama(null)
-        setAngkaKedua(null)
-        setOperator(null)
-        setDisplayNumber(0)
+        let str = DisplayNumber
+        str = str.slice(0,str.length -1)
+        setDisplayNumber(str)
+        setResult(str)
+        setAngkaPertama(str)
+
 
 
     }
@@ -108,15 +110,15 @@ function Calc() {
     console.log(`${AngkaPertama} ${operator} ${AngkaKedua} = ${result}`)
     return (
 
-        <div className='  bg-slate-900 rounded-md shadow-md py-14 px-5 flex justify-around text-center my-20 box-border ml-96 mr-96'>
+        <div className='  bg-slate-900 rounded-md shadow-md py-14 px-5 flex justify-around text-center my-20 box-border ml-96 mr-96 sm:'>
             <div className='w-[320px] h-[445px] py-1 px-4  rounded-md '>
                 <div className='flex h-[100px] items-center justify-end text-white'>
-                    <span className='text-3xl pr-5'> {DisplayNumber ? DisplayNumber : 0}</span>
+                    <span className='text-3xl pr-5 '> {DisplayNumber ? DisplayNumber : 0}</span>
                 </div>
                 <div className='flex flex-row flex-wrap h-[340px] gap-2'>
 
                     <Button clickAction={handleClear} val={'AC'} grow={true} />
-                    <Button clickAction={handleDelete} val={'DEL'} />
+                    <Button id='d' clickAction={handleDelete} val={'DEL'} />
                     <Button clickAction={handleOperator} val={'/'} operator={true} />
 
 
