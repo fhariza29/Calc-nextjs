@@ -132,7 +132,7 @@ function Calc() {
                 <div className='flex flex-row flex-wrap h-[340px] gap-2'>
 
                     <Button clickAction={handleClear} val={'AC'} grow={true} />
-                    <Button id='d' clickAction={handleDelete} val={'DEL'} />
+                    <Button clickAction={handleDelete} val={'DEL'} />
                     <Button clickAction={handleOperator} val={'/'} operator={true} />
 
 
